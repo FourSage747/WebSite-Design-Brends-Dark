@@ -3,44 +3,19 @@
   flex-direction: column;
   gap: 10px;
   .user_offers_list_li {
-    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     background-color: #181a1e;
-    // &:first-child {
-    //   background: linear-gradient(to bottom, #70a9ff, #0149b4);
-    //   color: white;
-    // }
     .user_offers_list_haracter {
       border-radius: 20px 20px 0 0;
       padding: 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      li:first-child,
       li:last-child {
-        // margin-right: 30px;
         display: flex;
         align-items: center;
         gap: 10px;
       }
-      // li:nth-child(2) {
-      //   margin-right: 50px;
-      // }
-      // li:nth-child(3) {
-      //   margin-right: 50px;
-      // }
-      // li:nth-child(4) {
-      //   margin-right: 80px;
-      // }
-      // li:nth-child(5) {
-      //   margin-right: 50px;
-      // }
-      // li:nth-child(6) {
-      //   margin-right: 20px;
-      // }
-      // li:nth-child(7) {
-      //   margin-right: 10px;
-      // }
     }
     .user_offers_list_hidden_div {
       background-color: #181a1e;

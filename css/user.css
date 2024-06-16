@@ -311,22 +311,37 @@ main {
   transition: background 0.5s ease;
   border-radius: 20px;
 }
-.user_status .user_status_div .user_status_normal_div {
-  padding-bottom: 17px;
-}
 .user_status .user_status_div .user_status_normal_div h3 {
   font-weight: 400;
   font-size: 18px;
   margin: 0;
+  margin-bottom: 24px;
 }
 .user_status .user_status_div .user_status_normal_div ul:first-of-type {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 18px;
 }
 .user_status .user_status_div .user_status_normal_div ul:first-of-type b {
   font-weight: 400;
   font-size: 18px;
+}
+.user_status .user_status_div .user_status_normal_div ul:nth-of-type(2) {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+}
+.user_status .user_status_div .user_status_normal_div ul:nth-of-type(2) button {
+  border-radius: 20px;
+  border: 0;
+  padding: 10px 12px;
+  color: white;
+  background-color: #181a1e;
+  font-weight: 300;
+  font-size: 10px;
+}
+.user_status .user_status_div .user_status_normal_div ul:nth-of-type(2) li:first-child button {
+  background-color: #3334ff;
 }
 .user_status .user_status_div .user_status_normal_div ul:last-of-type {
   position: absolute;
@@ -463,6 +478,14 @@ main {
   background-color: #3334ff;
 }
 
+#modal1 .modal .modal_desktop_menu {
+  display: block;
+}
+#modal1 .modal .modal_desktop_menu ul {
+  gap: 0;
+  justify-content: space-between;
+}
+
 .user_data {
   padding: 20px 0 30px 0;
 }
@@ -495,8 +518,56 @@ main {
   font-size: 20px;
 }
 
+.user_search div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user_search div div {
+  padding: 15px 20px;
+  background-color: #0e1218;
+  border-radius: 20px;
+  font-weight: 300;
+  font-size: 26px;
+}
+.user_search div ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.user_search div ul li {
+  border-radius: 20px;
+}
+.user_search div ul li:first-child {
+  width: 130px;
+  position: relative;
+  padding: 15px 20px;
+  background-color: #0e1218;
+}
+.user_search div ul li:first-child svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.user_search div ul li:first-child input {
+  width: 100%;
+  color: white;
+  padding: 0;
+  padding-left: 25px;
+  border: 0;
+  background: transparent;
+}
+.user_search div ul li button {
+  width: 180px;
+  border-radius: 20px;
+  border: 0;
+  padding: 15px 30px;
+  background-color: #423efc;
+  color: white;
+}
+
 .user_offers {
-  margin: 30px 0;
+  margin: 10px 0;
   background: #0e1218;
   border-radius: 20px;
   padding: 20px 10px;
@@ -512,7 +583,7 @@ main {
   color: white;
 }
 .user_offers ul li:first-child {
-  margin-right: 80px;
+  margin-right: 60px;
 }
 .user_offers ul li:nth-child(2) {
   margin-right: 100px;
@@ -520,8 +591,8 @@ main {
 .user_offers ul li:nth-child(3) {
   margin-right: 40px;
 }
-.user_offers ul li:nth-child(5) {
-  margin-right: 30px;
+.user_offers ul li:nth-child(4) {
+  margin-right: 40px;
 }
 
 .user_offers_list_ul {
@@ -530,7 +601,6 @@ main {
   gap: 10px;
 }
 .user_offers_list_ul .user_offers_list_li {
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   background-color: #181a1e;
 }
@@ -541,7 +611,6 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-.user_offers_list_ul .user_offers_list_li .user_offers_list_haracter li:first-child,
 .user_offers_list_ul .user_offers_list_li .user_offers_list_haracter li:last-child {
   display: flex;
   align-items: center;

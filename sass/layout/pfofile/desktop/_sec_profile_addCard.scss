@@ -1,0 +1,61 @@
+.profile_addCard {
+  button {
+    text-align: center;
+    border: 0;
+    padding: 10px 18px;
+    background-color: #0e1218;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .desktop_card_ul {
+    display: flex;
+    gap: 30px;
+    .desktop_card_li {
+      color: white;
+      padding: 22px;
+      border-radius: 20px;
+      background: linear-gradient(330deg, #8571b8, #051757);
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:first-child {
+          height: 34px;
+          margin-bottom: 34px;
+          b {
+            @include font(400, 18px);
+          }
+        }
+        &:nth-child(2) {
+          display: flex;
+          gap: 24px;
+          margin-bottom: 14px;
+          span {
+            width: 60px;
+          }
+          b {
+            display: flex;
+            gap: 5px;
+            @include font(500, 18px);
+          }
+        }
+        &:last-child {
+          b {
+            @include font(500, 16px);
+          }
+        }
+      }
+    }
+    .desktop_card_add {
+      padding: 66px 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+      background-color: #181a1e;
+      border-radius: 20px;
+    }
+  }
+}

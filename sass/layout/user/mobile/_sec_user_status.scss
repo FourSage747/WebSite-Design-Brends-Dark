@@ -7,17 +7,33 @@
     transition: background 0.5s ease;
     border-radius: 20px;
     .user_status_normal_div {
-      padding-bottom: 17px;
       h3 {
         @include font(400, 18px);
         margin: 0;
+        margin-bottom: 24px;
       }
       ul:first-of-type {
         display: flex;
         flex-direction: column;
-        gap: 28px;
+        gap: 18px;
         b {
           @include font(400, 18px);
+        }
+      }
+      ul:nth-of-type(2) {
+        margin-top: 23px;
+        display: flex;
+        justify-content: space-between;
+        button {
+          border-radius: 20px;
+          border: 0;
+          padding: 10px 12px;
+          color: white;
+          background-color: #181a1e;
+          @include font(300, 10px);
+        }
+        li:first-child button {
+          background-color: #3334ff;
         }
       }
       ul:last-of-type {
@@ -152,6 +168,17 @@
       color: white;
       box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
       background-color: #3334ff;
+    }
+  }
+}
+#modal1 {
+  .modal {
+    .modal_desktop_menu {
+      display: block;
+      ul {
+        gap: 0;
+        justify-content: space-between;
+      }
     }
   }
 }

@@ -348,17 +348,17 @@ main {
 }
 
 .manager_status {
-  padding-bottom: 8px;
+  padding: 48px 0 8px 0;
 }
-.manager_status .container .manager_status_ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 0;
-}
-.manager_status .container .manager_status_ul h2 {
-  margin: 0;
-  font-weight: 700;
-  font-size: 28px;
+.manager_status .container .manager_status_div {
+  margin-bottom: 8px;
+  width: 180px;
+  font-weight: 400;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #0e1218;
 }
 .manager_status .container .manager_status_ul1 {
   position: relative;
@@ -627,6 +627,37 @@ main {
   background-color: #515050;
 }
 
+.manager_offers .manager_offers_ul1 {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.manager_offers .manager_offers_ul1 li {
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 15px 20px;
+  background-color: #0e1218;
+}
+.manager_offers .manager_offers_ul1 li:last-child {
+  width: 130px;
+  position: relative;
+  padding: 15px 20px;
+}
+.manager_offers .manager_offers_ul1 li:last-child svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.manager_offers .manager_offers_ul1 li:last-child input {
+  width: 100%;
+  color: white;
+  padding: 0;
+  padding-left: 25px;
+  border: 0;
+  background: transparent;
+}
 .manager_offers .manager_offers_ul {
   display: flex;
   flex-direction: column;
@@ -642,25 +673,18 @@ main {
   margin-right: 70px;
 }
 .manager_offers .manager_offers_ul .manager_offers_ul_li:first-child ul li:nth-child(2) {
-  margin-right: 150px;
+  margin-right: 100px;
 }
 .manager_offers .manager_offers_ul .manager_offers_ul_li:first-child ul li:nth-child(3) {
   margin-right: 60px;
+}
+.manager_offers .manager_offers_ul .manager_offers_ul_li:first-child ul li:nth-child(4) {
+  margin-right: 30px;
 }
 .manager_offers .manager_offers_ul .manager_offers_ul_li ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.manager_offers .manager_offers_ul .manager_offers_ul_li ul li:first-child {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.manager_offers .manager_offers_ul .manager_offers_ul_li ul li:last-child {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 footer {

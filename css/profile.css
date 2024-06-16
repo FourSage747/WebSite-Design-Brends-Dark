@@ -347,79 +347,116 @@ main {
   top: 10px;
 }
 
-.profile_status {
-  padding-bottom: 8px;
-}
-.profile_status .container ul:first-child {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 0;
-}
-.profile_status .container ul:first-child button {
-  border: 0;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 10px;
-  background-color: #0e1218;
-}
-.profile_status .container div {
-  position: relative;
-  padding: 18px;
-  background-color: #0e1218;
-  border-radius: 20px;
-}
-.profile_status .container div h3 {
-  font-weight: 400;
-  font-size: 18px;
+.profile_card h3 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-right: 6px;
 }
-.profile_status .container div ul:first-of-type {
+.profile_card .profile_addCard_ul {
+  margin: 20px 0;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
 }
-.profile_status .container div ul:first-of-type b {
+.profile_card .profile_addCard_ul li {
+  display: flex;
+}
+.profile_card .choise-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 290px;
+  margin: auto;
+}
+.profile_card .choise-card .card {
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(330deg, #8571b8, #051757);
+}
+.profile_card .choise-card .card:first-child {
+  position: absolute;
+  height: 60%;
+  left: -78%;
+}
+.profile_card .choise-card .card:first-child li span {
   font-weight: 400;
-  font-size: 18px;
-}
-.profile_status .container div ul:first-of-type li:first-child span {
-  font-weight: 300;
   font-size: 12px;
 }
-.profile_status .container div ul:nth-of-type(2) {
-  margin-top: 15px;
-  display: flex;
-  gap: 10px;
+.profile_card .choise-card .card:first-child li b {
+  font-weight: 400;
+  font-size: 14px;
 }
-.profile_status .container div ul:nth-of-type(2) button {
-  border-radius: 20px;
-  border: 0;
-  padding: 10px 12px;
-  color: white;
-  background-color: #181a1e;
-  font-weight: 300;
-  font-size: 10px;
+.profile_card .choise-card .card:first-child li:first-child {
+  margin-bottom: 18px;
 }
-.profile_status .container div ul:nth-of-type(2) li:first-child button {
-  background-color: #3334ff;
+.profile_card .choise-card .card:first-child li:nth-child(2) {
+  margin-bottom: 20px;
 }
-.profile_status .container div ul:last-of-type {
+.profile_card .choise-card .card:first-child li:nth-child(2) b {
+  font-weight: 400;
+  font-size: 12px;
+}
+.profile_card .choise-card .card:first-child li:last-child b {
+  font-weight: 400;
+  font-size: 12px;
+}
+.profile_card .choise-card .card:last-child {
   position: absolute;
-  top: 18px;
-  right: 18px;
+  height: 60%;
+  right: -78%;
+}
+.profile_card .choise-card .card:last-child li span {
+  font-weight: 400;
+  font-size: 12px;
+}
+.profile_card .choise-card .card:last-child li b {
+  font-weight: 400;
+  font-size: 14px;
+}
+.profile_card .choise-card .card:last-child li:first-child {
+  margin-bottom: 18px;
+}
+.profile_card .choise-card .card:last-child li:nth-child(2) {
+  margin-bottom: 20px;
+}
+.profile_card .choise-card .card:last-child li:nth-child(2) b {
+  font-weight: 400;
+  font-size: 12px;
+}
+.profile_card .choise-card .card:last-child li:last-child b {
+  font-weight: 400;
+  font-size: 12px;
+}
+.profile_card .choise-card .card li {
   display: flex;
-  gap: 20px;
-}
-
-#modal1 .modal .modal_desktop_menu,
-#modal2 .modal .modal_desktop_menu {
-  display: block;
-}
-#modal1 .modal .modal_desktop_menu ul,
-#modal2 .modal .modal_desktop_menu ul {
-  gap: 0;
+  align-items: center;
   justify-content: space-between;
+}
+.profile_card .choise-card .card li span {
+  width: 56px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.profile_card .choise-card .card li b {
+  font-weight: 400;
+  font-size: 18px;
+}
+.profile_card .choise-card .card li:first-child {
+  margin-bottom: 44px;
+}
+.profile_card .choise-card .card li:nth-child(2) {
+  margin-bottom: 10px;
+}
+.profile_card .choise-card .card li:nth-child(2) b {
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  gap: 5px;
+}
+.profile_card .choise-card .card li:last-child b {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 #modal4 .modal {
@@ -553,46 +590,65 @@ main {
   background-color: #515050;
 }
 
-.profile_offers .profile_offers_ul {
-  display: flex;
-  flex-direction: column;
-}
-.profile_offers .profile_offers_ul .profile_offers_ul_li {
-  padding: 15px;
-  background-color: #181a1e;
-}
-.profile_offers .profile_offers_ul .profile_offers_ul_li:first-child {
+.profile_addCard button {
+  text-align: center;
+  border: 0;
+  padding: 10px 18px;
   background-color: #0e1218;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 8px;
 }
-.profile_offers .profile_offers_ul .profile_offers_ul_li:first-child ul li:first-child {
-  margin-right: 20px;
+.profile_addCard .desktop_card_ul {
+  display: flex;
+  gap: 30px;
 }
-.profile_offers .profile_offers_ul .profile_offers_ul_li:first-child ul li:nth-child(2) {
-  margin-right: 100px;
+.profile_addCard .desktop_card_ul .desktop_card_li {
+  color: white;
+  padding: 22px;
+  border-radius: 20px;
+  background: linear-gradient(330deg, #8571b8, #051757);
 }
-.profile_offers .profile_offers_ul .profile_offers_ul_li:first-child ul li:nth-child(5) {
-  margin-right: 20px;
-}
-.profile_offers .profile_offers_ul .profile_offers_ul_li:first-child ul li:nth-child(6) {
-  margin-right: 10px;
-}
-.profile_offers .profile_offers_ul .profile_offers_ul_li ul {
+.profile_addCard .desktop_card_ul .desktop_card_li li {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.profile_offers .profile_offers_ul .profile_offers_ul_li ul li:last-child {
+.profile_addCard .desktop_card_ul .desktop_card_li li:first-child {
+  height: 34px;
+  margin-bottom: 34px;
+}
+.profile_addCard .desktop_card_ul .desktop_card_li li:first-child b {
+  font-weight: 400;
+  font-size: 18px;
+}
+.profile_addCard .desktop_card_ul .desktop_card_li li:nth-child(2) {
   display: flex;
+  gap: 24px;
+  margin-bottom: 14px;
+}
+.profile_addCard .desktop_card_ul .desktop_card_li li:nth-child(2) span {
+  width: 60px;
+}
+.profile_addCard .desktop_card_ul .desktop_card_li li:nth-child(2) b {
+  display: flex;
+  gap: 5px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.profile_addCard .desktop_card_ul .desktop_card_li li:last-child b {
+  font-weight: 500;
+  font-size: 16px;
+}
+.profile_addCard .desktop_card_ul .desktop_card_add {
+  padding: 66px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   align-items: center;
-  gap: 10px;
-}
-.profile_offers .profile_offers_ul .profile_offers_ul_li ul b {
-  font-weight: 300;
-  font-size: 10px;
-}
-
-.backdrop .modal form ul button {
-  padding: 10px 22px;
+  justify-content: center;
+  background-color: #181a1e;
+  border-radius: 20px;
 }
 
 footer {
