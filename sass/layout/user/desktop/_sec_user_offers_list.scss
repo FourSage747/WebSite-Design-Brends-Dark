@@ -1,0 +1,127 @@
+.user_offers_list_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .user_offers_list_li {
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background-color: #181a1e;
+    // &:first-child {
+    //   background: linear-gradient(to bottom, #70a9ff, #0149b4);
+    //   color: white;
+    // }
+    .user_offers_list_haracter {
+      border-radius: 20px 20px 0 0;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li:first-child,
+      li:last-child {
+        // margin-right: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      // li:nth-child(2) {
+      //   margin-right: 50px;
+      // }
+      // li:nth-child(3) {
+      //   margin-right: 50px;
+      // }
+      // li:nth-child(4) {
+      //   margin-right: 80px;
+      // }
+      // li:nth-child(5) {
+      //   margin-right: 50px;
+      // }
+      // li:nth-child(6) {
+      //   margin-right: 20px;
+      // }
+      // li:nth-child(7) {
+      //   margin-right: 10px;
+      // }
+    }
+    .user_offers_list_hidden_div {
+      background-color: #181a1e;
+      border-radius: 0 0 20px 20px;
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0;
+      transition: opacity 0.5s ease, max-height 0.5s ease;
+      &.show {
+        padding: 20px 10px;
+        opacity: 1;
+        max-height: 1000px;
+      }
+      .user_offers_list_hidden_div_ul1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 22px;
+        li {
+          position: relative;
+          padding: 10px;
+          background-color: #0e1218;
+          width: 180px;
+          border-radius: 10px;
+          b {
+            display: block;
+            margin-top: 5px;
+          }
+          svg {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+          }
+          &:first-child {
+            border-bottom: 5px solid #423efc;
+          }
+          &:nth-child(2) {
+            border-bottom: 5px solid #f6d423;
+          }
+          &:nth-child(3) {
+            border-bottom: 5px solid #7c57f4;
+          }
+          &:nth-child(4) {
+            border-bottom: 5px solid #36393e;
+          }
+          &:last-child {
+            border-bottom: 5px solid #ff7a00;
+          }
+        }
+      }
+    }
+    .user_offers_list_hidden_div_ul2 {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #0e1218;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      span {
+        @include font(300, 12px);
+      }
+      ul {
+        display: flex;
+        gap: 5px;
+      }
+    }
+    .user_offers_list_hidden_div_ul3 {
+      display: flex;
+      gap: 14px;
+      li {
+        @include font(300, 14px);
+        padding: 10px 20px;
+        background-color: #0e1218;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.backdrop {
+  .modal {
+    .modal_desktop_menu {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.offers_search {
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      padding: 15px 20px;
+      background-color: #0e1218;
+      border-radius: 20px;
+      @include font(300, 26px);
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      li {
+        border-radius: 20px;
+        &:first-child {
+          width: 130px;
+          position: relative;
+          padding: 15px 20px;
+          background-color: #0e1218;
+          svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          input {
+            width: 100%;
+            color: white;
+            padding: 0;
+            padding-left: 25px;
+            border: 0;
+            background: transparent;
+          }
+        }
+
+        button {
+          width: 180px;
+          border-radius: 20px;
+          border: 0;
+          padding: 15px 30px;
+          background-color: #423efc;
+          color: white;
+        }
+      }
+    }
+  }
+}

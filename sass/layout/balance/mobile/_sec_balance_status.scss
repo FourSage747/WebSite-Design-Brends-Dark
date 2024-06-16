@@ -1,0 +1,51 @@
+.balance_status {
+  padding: 22px 0 8px 0;
+  .container {
+    button {
+      text-align: center;
+      border: 0;
+      padding: 10px 18px;
+      background-color: #0e1218;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      color: white;
+    }
+    div {
+      position: relative;
+      padding: 20px;
+      background-color: #0e1218;
+      border-radius: 20px;
+      h3 {
+        margin: 0;
+        margin-bottom: 20px;
+        @include font(400, 18px);
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        b {
+          @include font(400, 18px);
+        }
+        span {
+          @include font(400, 16px);
+        }
+        li:last-child {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          padding: 5px 20px;
+          border-radius: 15px;
+          background-color: #d8e1ff;
+          span {
+            @include font(300, 12px);
+            color: #2e65f3;
+          }
+        }
+      }
+    }
+  }
+}
